@@ -6,6 +6,7 @@ frontend:
         - npm install
     build:
       commands:
+        - aws s3 ls
         - npm run build
     postBuild:
       commands:
